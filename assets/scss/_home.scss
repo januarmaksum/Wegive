@@ -1,0 +1,393 @@
+.wg-jumbotron {
+  background-image: url('../img/background-header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+
+  @media (min-width: 1440px) {
+    height: 600px;
+
+    &__content {
+      height: 600px - 91px;
+    }
+  }
+
+  @media (min-width: 1680px) {
+    height: 700px;
+
+    &__content {
+      height: 700px - 91px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    height: 825px;
+
+    &__content {
+      height: 825px - 91px;
+    }
+  }
+
+  @media (max-width: 1439.98px) {
+    height: 580px;
+
+    &__content {
+      height: 580px - 91px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    height: 360px;
+
+    &__content {
+      height: 360px - 48px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 150px;
+
+    @media (min-width: 1440px) {
+      font-size: 38px;
+    }
+
+    @media (min-width: 1680px) {
+      font-size: 45px;
+      margin-bottom: 185px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 88px;
+    }
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 88px;
+    }
+  }
+
+  &__arrow-down {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    bottom: 48px;
+    text-align: center;
+
+    @media (min-width: 1680px) {
+      bottom: 95px;
+    }
+
+    @media (min-width: 1440px) {
+      bottom: 75px;
+    }
+
+    @media (max-width: 1439.98px) {
+      bottom: 70px;
+    }
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    >img {
+      @media (min-width: 1440px) {
+        height: 30px;
+      }
+
+      @media (min-width: 1680px) {
+        height: 45px;
+      }
+
+      @media (max-width: 1439.98px) {
+        height: 25px;
+      }
+    }
+
+    >span {
+      color: rgba(255, 255, 255, 0.5);
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .col-xxl {
+    @media (min-width: 1440px) {
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%;
+    }
+
+    @media (min-width: 1680px) {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 1920px) {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+  }
+
+  .offset-xxl {
+    @media (min-width: 1440px) {
+      margin-left: 8.333333%;
+    }
+
+    @media (min-width: 1920px) {
+      margin-left: 16.666667%;
+    }
+  }
+}
+
+.wg-content {
+  &__whatwedo {
+    background-color: $secondary;
+
+    .col-xxl {
+      @media (min-width: 1440px) {
+        -ms-flex: 0 0 65%;
+        flex: 0 0 65%;
+        max-width: 65%;
+      }
+
+      @media (min-width: 1680px) {
+        -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
+        max-width: 55%;
+      }
+
+      @media (min-width: 1920px) {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+.section-overlay {
+  margin-top: -70px;
+}
+
+.section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  @media (min-width: 1680px) {
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+  }
+
+  @media (max-width: 991.98px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 767.98px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__title-h2 {
+    margin-bottom: 6rem;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 5rem;
+    }
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__title-h3 {
+    margin-bottom: 3rem;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__gap-bottom {
+    margin-bottom: 12rem;
+
+    @media (min-width: 1680px) {
+      margin-bottom: 14rem;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 16rem;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.wg-whatwedo-list {
+  @media (max-width: 767.98px) {
+    >[class*="col"] {
+      margin-bottom: 4rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.wg-card {
+  >img {
+    border-radius: 50%;
+    box-shadow: 11px 10px 80px 0px rgba(212, 212, 212, 1);
+    height: 100px;
+
+    @media (min-width: 1680px) {
+      height: 130px;
+    }
+
+    @media (min-width: 1920px) {
+      height: 150px;
+    }
+
+    @media (max-width: 991.98px) {
+      height: 85px;
+    }
+  }
+
+  >p {
+    margin-bottom: 0;
+    margin-top: 40px;
+
+    @media (max-width: 575.98px) {
+      margin-top: 25px;
+    }
+  }
+}
+
+.wg-device-apps {
+  @media (min-width: 576px) {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
+
+.wg-what-u-love {
+  padding-bottom: 0;
+}
+
+.wg-wul-feature-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+
+  @media (min-width: 1680px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1920px) {
+    height: 600px;
+  }
+
+  @media (max-width: 991.98px) {
+    background-image: none !important;
+    display: none;
+  }
+}
+
+.wg-wul-feature-description {
+  padding: 3rem 2rem;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 992px) {
+    background-image: none !important;
+  }
+
+  @media (min-width: 1680px) {
+    height: 500px;
+    padding: 5rem;
+  }
+
+  @media (min-width: 1920px) {
+    height: 600px;
+    padding: 8rem 5rem;
+  }
+
+  @media (max-width: 991.98px) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: 575.98px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &::before {
+    @media (max-width: 991.98px) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .section__title-h3 {
+    @media (max-width: 991.98px) {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  >p {
+    @media (min-width: 992px) {
+      max-height: 218px;
+      overflow-y: auto;
+    }
+
+    @media (min-width: 1680px) {
+      max-height: 267px;
+    }
+
+    @media (max-width: 991.98px) {
+      max-height: 230px;
+      color: #fff;
+      overflow-y: auto;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.wg-carousel {
+  .slick-slide {
+    @media (min-width: 768px) {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: -45px;
+  }
+}

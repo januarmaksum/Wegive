@@ -1,0 +1,43 @@
+.wg-footer {
+  .section__title-h3 {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 16px;
+    color: #585756;
+    margin-bottom: 1rem;
+  }
+
+  address {
+    color: #81807e;
+    font-weight: 500;
+  }
+}
+
+.wg-sosmed {
+  &__icon {
+    background-image: url('../img/sosmed.png');
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+
+    &.wg-fb {
+      background-position: -5px -5px;
+    }
+
+    &.wg-ig {
+      background-position: -63px -5px;
+    }
+  }
+
+  &:hover {
+    .wg-sosmed__icon {
+      &.wg-fb {
+        background-position: -5px -63px;
+      }
+
+      &.wg-ig {
+        background-position: -63px -63px;
+      }
+    }
+  }
+}
